@@ -1,0 +1,167 @@
+@use 'variables'
+
+// APP
+.content
+    width: 100%
+    height: 100vh
+
+/* Navbar  */
+
+.navbar , .footer
+    background: variables.$bg-h
+    box-shadow: 0.1rem 0.1rem 0.1rem #444
+    padding: 1.5em
+    display: flex
+    justify-content: space-between
+    color: variables.$white-color
+    
+    &-link
+        text-decoration: none
+        font-weight: bold
+        color: variables.$white-color
+        cursor: pointer
+
+        &:hover
+            color: variables.$txt-color
+            transition: 0.2s all linear
+
+//footer
+.footer
+    margin-top: 50vh
+
+// Formulario 
+
+.list
+    margin: 2em auto
+    display: flex
+    gap: 1rem
+    align-items: center
+    flex-direction: column
+
+    &-title
+        color: variables.$txt-color
+        font-weight: 500
+
+    &-form
+        padding: 1rem
+        display: flex
+        gap: 1.5rem
+        flex-direction: column
+
+        label
+            display: flex
+            font-weight: bold
+            gap: 0.5rem
+            flex-direction: column
+        
+        input, textarea
+            padding: 0.8rem
+            border: none
+            background: #eee
+            color: variables.$black-color
+            border-radius: 0.5rem
+        
+        button
+            padding: 0.6rem
+            border-radius: 0.5rem
+            border: none
+            font-weight: bold
+            background: variables.$bg-button
+            color: variables.$white-color
+            cursor: pointer
+            transition: 0.5s all ease-in-out
+
+            &:hover
+                transition: 0.5s all ease-in-out
+                color: variables.$txt-color
+                background: variables.$white-color
+                border: 3px solid variables.$bg-button
+
+/*  Home */
+.book-page
+    margin: 2em auto
+    text-align: center
+    display: flex
+    gap: 2rem
+    flex-direction: column
+
+    &-list
+        display: flex
+        align-items: center
+        justify-content: center
+    
+    button
+        padding: 0.5rem
+        border-radius: 0.5rem
+        border: none
+        color: variables.$white-color 
+        font-weight: 600
+        cursor: pointer
+        background: variables.$bg-button
+    
+    
+.book-list-items
+    display: flex
+    padding: 0.5rem
+    justify-content: space-between
+    font-weight: bold
+    border-bottom: 1px solid variables.$black-color
+    list-style: none
+
+.book-info
+    display: flex
+    align-items: center
+    background: #eee
+    padding: 1rem
+    justify-content: space-between
+    font-weight: bold
+
+    &-buttons
+        display: flex
+        align-items: center
+        gap: 1rem
+        text-decoration: none
+    
+    &-link
+        color: variables.$bg-button
+        text-decoration: none
+
+/* List */
+.link-book
+    margin: 0 auto
+    width: 20%
+    padding: 0.5rem
+    border-radius: 1rem
+    text-decoration: none
+    font-weight: bold
+    color: variables.$white-color
+    background: variables.$bg-button
+    transition: 0.2s all
+
+    &:hover
+        transition: 0.2s all
+        color: #eee
+
+// About
+.about
+    margin: 2em auto
+    display: flex
+    gap: 1.5rem
+    text-align: center
+    align-items: center
+    flex-direction: column
+
+    &-list
+        list-style: none
+        display: flex
+        gap: 0.5rem
+        font-weight: 500
+        flex-direction: column
+    
+    &-link
+        background: variables.$bg-button
+        padding: 0.6rem
+        border-radius: 0.5rem
+        color: variables.$white-color
+        text-decoration: none
+        font-weight: bold
